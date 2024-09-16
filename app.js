@@ -228,8 +228,8 @@ import * as socketStuff from "./lib/socketInit.js";
         ["lightning-sixth-beaufort.glitch.me", "QUADTREE", true, 0], // QUAD TREE
         ["messy-keen-dragonfly.glitch.me", "BVH", true, 0], // BVH
         ["pewter-brick-crystal.glitch.me", "SPACIALHASHING", true, 0], // SPACIALHASH */
-        ["feline-nimble-swallow.glitch.me", "GLITCH", true, 0], //GEOHASH
-        ["c8m4r2ux5zbcliq080zhodyxu2t5qfxc.onrender.com", "ASIA", true, 0],  // BUN
+        ["feline-nimble-swallow.glitch.me", "GLITCH", true, 0], // PHOSYNE
+        ["verbose-momentous-alphabet.glitch.me", "GLITCH", true, 0],
 			];
     const urlParams = new URLSearchParams(window.location.search);
     const serverUrl = urlParams.get('s');
@@ -2810,7 +2810,7 @@ import * as socketStuff from "./lib/socketInit.js";
         drawText(global.metrics.latency + " ms " + global.serverName, x + len, y - 50, 10, color.guiwhite, "right");
     } else if (!global.GUIStatus.minimapReducedInfo) {
         drawText("phosyne.io", x + len, y - 50 - 2 * 14 - 2, 15, "#ffffff", "right");
-        drawText(global.mspt + "% : " + global.metrics.rendertime + " FPS", x + len, y - 50 - 1 * 14, 10, orangeColor ? color.orange : color.guiwhite, "right");
+        drawText(global.mspt + " mspt : " + global.metrics.rendertime + " FPS", x + len, y - 50 - 1 * 14, 10, orangeColor ? color.orange : color.guiwhite, "right");
         drawText(global.metrics.latency + " ms phosyne-" + global.serverName.toLowerCase() + " " + global.metrics.updatetime + "Hz", x + len, y - 50, 10, color.guiwhite, "right");
     } else drawText("phosyne.io", x + len, y - 22 - 2 * 14 - 2, 15, "#ffffff", "right");
 }
