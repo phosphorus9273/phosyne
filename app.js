@@ -240,7 +240,11 @@ import * as socketStuff from "./lib/socketInit.js";
             location = "GLITCH";
         } else if (serverUrl.endsWith('.onrender.com')) {
             location = "RENDER";
-        }
+        } else if (serverUrl.endsWith('.csb.app')) {
+            location = "CSB";
+        } else {
+            location = "UNKNOWN";
+        };
 
         // If location is determined, push to servers array
         if (location) {
